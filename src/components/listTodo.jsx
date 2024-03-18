@@ -207,12 +207,12 @@ function ListTodo() {
                 <label htmlFor="link" className="text-[#818181] text-lg w-full outline-none">Link</label>
                 <input type="url" id="link" name="link" placeholder="Link" value={link} onChange={(e) => setLink(e.target.value)}  className="border-[1.4px] border-solid border-[#afafaf] w-full p-[10px] text-[17px] rounded-[5px] mx-[0] my-[5px] outline-none bg-[#F6F6F6] text-[#606060]" />
             </div>
-            <div className="flex justify-between items-center gap-[50px] md:flex-col md:gap-0">
+            <div className="flex justify-between items-center gap-[50px] md:flex-col md:gap-0 md:w-full">
                 <div className="w-full flex justify-start items-start flex-col mx-[0] my-[10px]">
-                    <label htmlFor="createdAT" className="text-[#818181] text-lg w-full outline-none">Created Date</label>
+                    <label htmlFor="createdAT" className="text-[#818181] text-lg w-full outline-none md:w-full">Created Date</label>
                     <input type="date" id="createdAT" name="createdAT" defaultValue={createAt} placeholder="Create" className="border-[1.4px] md:w-full border-solid border-[#afafaf] w-full p-[10px] text-[17px] rounded-[5px] mx-[0] my-[5px] outline-none bg-[#F6F6F6] text-[#606060]" disabled />
                 </div>
-                <div className="w-full flex justify-start items-start flex-col mx-[0] my-[10px]">
+                <div className="w-full flex justify-start items-start flex-col mx-[0] my-[10px] md:w-full">
                     <label htmlFor="update" className="text-[#818181] text-lg w-full outline-none">Update Date</label>
                     <input type="date" id="update" name="update" placeholder="update" defaultValue={updatedAt} className="border-[1.4px] md:w-full border-solid border-[#afafaf] w-full p-[10px] text-[17px] rounded-[5px] mx-[0] my-[5px] outline-none bg-[#F6F6F6] text-[#606060]" disabled />
                 </div>
