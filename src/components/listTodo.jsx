@@ -99,7 +99,6 @@ function ListTodo() {
     }
     
     const handleCheck = (e, bool) => {
-        console.log("Click");
         axios.put(`https://straitpaybackend.onrender.com/api/todo/${e}`, {
             todoName: e.todoName,
             todoLink: e.todoLink,
