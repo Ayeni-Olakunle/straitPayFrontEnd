@@ -197,7 +197,7 @@ function ListTodo() {
 
         {/* Details Modal */}
         {modal && <form onSubmit={handleEdit} className="absolute top-[0] w-full left-[0] h-screen flex justify-center bg-[#000000a6] overflow-y-scroll items-start">
-            <div className="w-[450px] bg-[white] h-auto p-[20px] rounded-[5px] mx-[0] my-[40px]">
+            <div className="w-[450px] bg-[white] h-auto p-[20px] rounded-[5px] mx-[0] my-[40px] md:w-[90%]">
                 <h1 className="text-center text-[22px] font-bold">View or Edit Todo</h1>
 
                 <div className="w-full flex justify-start items-start flex-col mx-[0] my-[10px]">
@@ -208,7 +208,7 @@ function ListTodo() {
                 <label htmlFor="link" className="text-[#818181] text-lg w-full outline-none">Link</label>
                 <input type="url" id="link" name="link" placeholder="Link" value={link} onChange={(e) => setLink(e.target.value)}  className="border-[1.4px] border-solid border-[#afafaf] w-full p-[10px] text-[17px] rounded-[5px] mx-[0] my-[5px] outline-none bg-[#F6F6F6] text-[#606060]" />
             </div>
-            <div className="flex justify-between items-center gap-[50px]">
+            <div className="flex justify-between items-center gap-[50px] md:flex-col md:gap-0">
                 <div className="w-full flex justify-start items-start flex-col mx-[0] my-[10px]">
                     <label htmlFor="createdAT" className="text-[#818181] text-lg w-full outline-none">Created Date</label>
                     <input type="date" id="createdAT" name="createdAT" defaultValue={createAt} placeholder="Create" className="border-[1.4px] border-solid border-[#afafaf] w-full p-[10px] text-[17px] rounded-[5px] mx-[0] my-[5px] outline-none bg-[#F6F6F6] text-[#606060]" disabled />
