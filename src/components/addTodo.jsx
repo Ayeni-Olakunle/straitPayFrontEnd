@@ -35,7 +35,7 @@ function AddTodo() {
         })
         .catch((err) => {
             setLoading(false);
-            toast.error(err.response.data.message, {
+            toast.error(err.message, {
                 position: "top-right"
             });
         });
